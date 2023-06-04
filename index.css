@@ -1,0 +1,112 @@
+
+body{
+    
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(hsl(221, 100%, 96%));
+}
+.card{
+    box-shadow: rgba(0, 0, 0, .24) 0px 3px 8px;
+    border-radius: 2rem;
+    width: 600px;
+    background-color: var(hsl(0, 0%, 100%));
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.YourResult{
+    width: 35%;
+    padding: 1.5rem 2rem;
+    border-radius: 2rem;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.yourmark{
+    padding: 50px;
+    width: 74px;
+    height: 74px;
+    border-radius: 100%;
+    box-shadow: inset 1px 1px 12px 0px hsla(256, 72%, 46%, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px;
+}
+.bold-score{
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+}
+.comment{
+    color: white;
+    align-items: center;
+}
+.comment-txt{
+    color: white;
+    align-items: center;
+}
+.summary{
+    width: 50%;
+    padding-right: 15px;
+}
+.levels{
+    display: flex;
+    flex-direction: column;
+
+}
+.reaction{
+    display: flex;
+    justify-content: space-between;
+    background-color:   hsl(0, 100%, 67%,0.1);
+    color: hsl(0, 100%, 67%);
+    margin-bottom: 15px;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+.memory{
+    display: flex;
+    justify-content: space-between;
+    background-color:   hsl(39, 100%, 56%,0.1);
+    color: hsl(39, 100%, 56%);
+    margin-bottom: 15px;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+.Verbal{
+    display: flex;
+    justify-content: space-between;
+    background-color:   hsl(166, 100%, 37%,0.1);
+    color: hsl(166, 100%, 37%);
+    margin-bottom: 15px;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+.visual{
+    display: flex;
+    justify-content: space-between;
+    background-color:   hsl(234, 85%, 45%,0.1);
+    color: hsl(234, 85%, 45%);
+    margin-bottom: 15px;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+.cont{
+    background-color: hsl(224, 30%, 27%);
+    align-items: center;
+    border-radius: 30px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
