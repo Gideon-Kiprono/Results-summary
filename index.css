@@ -9,24 +9,35 @@ body{
 }
 .card{
     box-shadow: rgba(0, 0, 0, .24) 0px 3px 8px;
-    border-radius: 2rem;
+    border-radius: 20px;
     width: 600px;
     background-color: var(hsl(0, 0%, 100%));
+}
+@media screen and (max-width: 375px){
+    .container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
 .container{
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
 }
 .YourResult{
     width: 35%;
-    padding: 1.5rem 2rem;
-    border-radius: 2rem;
+    padding: 15px 20px;
+    border-radius: 20px;
     background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+}
+.YourResult h2{
+    color: white;
 }
 .yourmark{
     padding: 50px;
@@ -56,51 +67,62 @@ body{
 .summary{
     width: 50%;
     padding-right: 15px;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
 }
 .levels{
     display: flex;
     flex-direction: column;
-
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.levels .row-1{
+    background-color:   hsl(0, 100%, 67%,0.1);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    align-items: center;
 }
 .reaction{
+    color: hsl(0, 100%, 67%);
+    align-items: center;
+}
+.levels .row-2{
     display: flex;
     justify-content: space-between;
-    background-color:   hsl(0, 100%, 67%,0.1);
-    color: hsl(0, 100%, 67%);
-    margin-bottom: 15px;
-    align-items: center;
-    padding: 10px;
     border-radius: 10px;
+    background-color:  hsl(39, 100%, 56%,0.1);
+    align-items: center;
 }
 .memory{
-    display: flex;
-    justify-content: space-between;
-    background-color:   hsl(39, 100%, 56%,0.1);
     color: hsl(39, 100%, 56%);
-    margin-bottom: 15px;
     align-items: center;
-    padding: 10px;
-    border-radius: 10px;
 }
-.Verbal{
+.levels .row-3{
     display: flex;
     justify-content: space-between;
     background-color:   hsl(166, 100%, 37%,0.1);
-    color: hsl(166, 100%, 37%);
-    margin-bottom: 15px;
-    align-items: center;
-    padding: 10px;
     border-radius: 10px;
+    align-items: center;
 }
-.visual{
+.Verbal{
+    color: hsl(166, 100%, 37%);
+    align-items: center;
+}
+.levels .row-4{
     display: flex;
     justify-content: space-between;
     background-color:   hsl(234, 85%, 45%,0.1);
-    color: hsl(234, 85%, 45%);
-    margin-bottom: 15px;
-    align-items: center;
-    padding: 10px;
     border-radius: 10px;
+    align-items: center;
+}
+.visual{
+    color: hsl(234, 85%, 45%);
+    align-items: center;
 }
 .cont{
     background-color: hsl(224, 30%, 27%);
@@ -109,4 +131,21 @@ body{
     text-align: center;
     padding: 10px;
     color: white;
+    margin-top: 30px;
 }
+.attribution{
+    bottom: 0;
+    position: fixed;
+}
+@media screen and (max-width: 375px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      margin:.5px auto;
+      width: 100%
+    }
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+  }
